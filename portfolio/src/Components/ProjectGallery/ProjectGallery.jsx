@@ -4,10 +4,20 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 // DATA: replace img paths and profile links as needed
 const profilesData = [
   {
+    id: 4,
+    img: "/images/netflix.jpg",
+    name: "AI Shelter Operations & Case Management System",
+    desc: "A next-generation case management system showcasing cutting-edge frontend development with advanced animations, real-time monitoring, and professional-grade user experience.",
+    github: "https://github.com/Fikre-M/Netflix",
+    website: "https://edu-react-movie-app.knoweledagebased.com/",
+    category: "Frontend App",
+  },
+
+  {
     id: 1,
     img: "/images/evangadi_forum.jpg",
-    name: "Evangadi Forum",
-    desc: "A responsive question and answer forum application built with Vite React and Node.js, featuring a MySQL database. This project provides a platform for users to engage in discussions and share ideas, showcasing a clean and intuitive design.",
+    name: "AI Healthcare & Medical Appointment System",
+    desc: "AI for Health is a modern, production-ready healthcare platform that combines artificial intelligence with intuitive user experience to provide comprehensive healthcare management solutions. Built with React, TypeScript, and modern web technologies, it offers both patient and doctor interfaces with advanced AI assistance.",
     github: "https://github.com/Fikre-M/evangadi_forum",
     website: "https://evangadiforum.knoweledagebased.com/",
     category: "fullstack-app",
@@ -15,30 +25,23 @@ const profilesData = [
   {
     id: 2,
     img: "/images/apple_bootstrap.jpg",
-    name: "Apple Clone",
-    desc: "A responsive Apple website clone built with Vite React and Node.js, featuring a MySQL database. This project showcases a sleek and modern interface, mirroring Apple's aesthetic.",
+    name: "AI Ethiopian Tour + Cultural Concierge App",
+    desc: "A modern, AI-powered tourism platform for Ethiopia featuring multilingual chat, tour booking, and integrated payment processing.",
     github: "https://github.com/Fikre-M/apllee-clone",
     website: "https://startling-heliotrope-e68744.netlify.app/",
-    category: "fullstack-app",
+    category: "Full-stack App",
   },
+
   {
     id: 3,
-    img: "/images/amazon.jpg",
-    name: "Amazon Clone",
-    desc: "A responsive Amazon website clone created with Vite React and Node.js, utilizing a firebase database. This project demonstrates a robust e-commerce platform with a user-friendly interface.",
-    github: "https://github.com/Fikre-M/amazon_replica",
-    website: "https://amazon-replica-fikre.netlify.app/",
-    category: "fullstack-app",
+    img: "/images/clock_resized.jpg",
+    name: "Rideshare Application",
+    desc: "A modern, intelligent rideshare application built with React and powered by artificial intelligence. This platform features smart driver-passenger matching, dynamic pricing, route optimization, demand prediction, and predictive analytics.",
+    github: "https://github.com/Fikre-M/DigitalClockApp",
+    website: "https://clock.rohaazage.com/",
+    category: "Frontend App",
   },
-  {
-    id: 4,
-    img: "/images/netflix.jpg",
-    name: "Netflix Clone",
-    desc: "A responsive Netflix website clone developed using Vite React and Node.js. This project replicates the popular streaming service's user interface and experience.",
-    github: "https://github.com/Fikre-M/Netflix",
-    website: "https://edu-react-movie-app.knoweledagebased.com/",
-    category: "fullstack-app",
-  },
+
   {
     id: 5,
     img: "/images/fms.png",
@@ -47,15 +50,6 @@ const profilesData = [
     github: "https://github.com/Fikre-M/FP",
     website: "https://www.linkedin.com/in/fikremariam-kassa-28916062/",
     category: "portfolio",
-  },
-  {
-    id: 6,
-    img: "/images/clock_resized.jpg",
-    name: "Digital Clock App",
-    desc: "I developed an interactive Digital Clock application integrated with a chatbot using Vite and React to provide users with real-time timekeeping and conversational assistance within a single, modern web interface.",
-    github: "https://github.com/Fikre-M/DigitalClockApp",
-    website: "https://clock.rohaazage.com/",
-    category: "frontend-app",
   },
 ];
 
