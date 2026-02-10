@@ -49,7 +49,7 @@ const defaultProjects: Project[] = [
     category: "Full Stack App",
     technologies: ["React", "Node.js", "MySQL", "Vite"],
   },
-  
+
   // Front-end Apps
   {
     id: 3,
@@ -71,7 +71,7 @@ const defaultProjects: Project[] = [
     category: "Front-end App",
     technologies: ["React", "Vite", "JavaScript", "CSS"],
   },
-  
+
   // Portfolio
   {
     id: 5,
@@ -281,6 +281,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     </article>
   );
 };
+
+const ProjectGallery: React.FC<ProjectGalleryProps> = ({
   projects = defaultProjects,
   loading = false,
   error,
@@ -326,39 +328,39 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   // Filter projects based on category and search term
   const filteredProjects = useMemo(() => {
-    console.log('Filtering projects with:', { 
-      selectedCategory, 
+    console.log("Filtering projects with:", {
+      selectedCategory,
       searchTerm,
       allCategories: categories,
-      projects: projects.map(p => ({ name: p.name, category: p.category }))
+      projects: projects.map((p) => ({ name: p.name, category: p.category })),
     });
-    
+
     const result = projects.filter((project) => {
       // Handle 'All' category
-      const isAll = selectedCategory === 'All' || selectedCategory === 'all';
-      const categoryMatch = isAll || getCategoryDisplayName(project.category) === selectedCategory;
-      
+      const isAll = selectedCategory === "All" || selectedCategory === "all";
+      const categoryMatch =
+        isAll || getCategoryDisplayName(project.category) === selectedCategory;
+
       console.log(`Project '${project.name}' (${project.category}):`, {
         matchesCategory: categoryMatch,
         isAll,
         selectedCategory,
-        projectCategory: project.category
+        projectCategory: project.category,
       });
-      
-      const searchMatch = 
-        searchTerm === "" || 
+
+      const searchMatch =
+        searchTerm === "" ||
         project.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         project.desc.toLowerCase().includes(searchTerm.toLowerCase()) ||
         (project.technologies &&
           project.technologies.some((tech) =>
-            tech.toLowerCase().includes(searchTerm.toLowerCase())
-          )
-        );
-      
+            tech.toLowerCase().includes(searchTerm.toLowerCase()),
+          ));
+
       return categoryMatch && searchMatch;
     });
-    
-    console.log('Filtered projects:', result);
+
+    console.log("Filtered projects:", result);
     return result;
   }, [projects, selectedCategory, searchTerm, categories]);
 
