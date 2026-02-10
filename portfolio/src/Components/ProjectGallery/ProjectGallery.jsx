@@ -20,7 +20,7 @@ const profilesData = [
     desc: "AI for Health is a modern, production-ready healthcare platform that combines artificial intelligence with intuitive user experience to provide comprehensive healthcare management solutions. Built with React, TypeScript, and modern web technologies, it offers both patient and doctor interfaces with advanced AI assistance.",
     github: "https://github.com/Fikre-M/evangadi_forum",
     website: "https://evangadiforum.knoweledagebased.com/",
-    category: "fullstack-app",
+    category: "Full-Stack App",
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const profilesData = [
     desc: "A modern, AI-powered tourism platform for Ethiopia featuring multilingual chat, tour booking, and integrated payment processing.",
     github: "https://github.com/Fikre-M/apllee-clone",
     website: "https://startling-heliotrope-e68744.netlify.app/",
-    category: "Full-stack App",
+    category: "Full-Stack App",
   },
 
   {
@@ -179,17 +179,56 @@ export default function ProjectGallery() {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Define categories in the new format
+  // Define categories - using display names that match the button labels
   const categories = useMemo(() => {
-    return ["all", "Full Stack App", "Front-end App", "portfolio"];
+    return ["all", "Full Stack App", "Front-end App", "Portfolio"];
   }, []);
 
-  // Get display name for category
+  // Helper function to normalize category for comparison
+  const normalizeCategory = (category) => {
+    if (!category) return "";
+    // Convert to lowercase and remove dashes/spaces for consistent comparison
+    return category.toLowerCase().replace(/[-_ ]/g, "");
+  };
+
+  // Filter profiles based on category and search term
+  const filteredProfiles = useMemo(() => {
+    return profilesData.filter((profile) => {
+      // Category matching - normalize both for comparison
+      const normalizedProfileCategory = normalizeCategory(profile.category);
+      let categoryMatch = false;
+
+      if (selectedCategory === "all") {
+        categoryMatch = true;
+      } else if (selectedCategory === "Full Stack App") {
+        // Match both "fullstack-app" and "Full-stack App"
+        categoryMatch = normalizedProfileCategory.includes("fullstack");
+      } else if (selectedCategory === "Front-end App") {
+        // Match both "Frontend App" and "frontend-app"
+        categoryMatch = normalizedProfileCategory.includes("frontend");
+      } else if (selectedCategory === "Portfolio") {
+        // Match "portfolio"
+        categoryMatch = normalizedProfileCategory.includes("portfolio");
+      }
+
+      // Search matching
+      const searchMatch =
+        searchTerm === "" ||
+        profile.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        profile.desc.toLowerCase().includes(searchTerm.toLowerCase());
+
+      return categoryMatch && searchMatch;
+    });
+  }, [selectedCategory, searchTerm]);
+
+  // Get display name for category badge
   const getCategoryDisplayName = (category) => {
-    switch (category) {
-      case "fullstack-app":
-        return "FullStack App";
-      case "frontend-app":
+    switch (category.toLowerCase().replace(/[-_ ]/g, "")) {
+      case "fullstackapp":
+      case "full-stackapp":
+        return "Full-Stack App";
+      case "frontendapp":
+      case "front-endapp":
         return "Frontend App";
       case "portfolio":
         return "Portfolio";
@@ -199,18 +238,6 @@ export default function ProjectGallery() {
         return category.charAt(0).toUpperCase() + category.slice(1);
     }
   };
-
-  // Filter profiles based on category and search term
-  const filteredProfiles = useMemo(() => {
-    return profilesData.filter((profile) => {
-      const matchesCategory =
-        selectedCategory === "all" || profile.category === selectedCategory;
-      const matchesSearch =
-        profile.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        profile.desc.toLowerCase().includes(searchTerm.toLowerCase());
-      return matchesCategory && matchesSearch;
-    });
-  }, [selectedCategory, searchTerm]);
 
   return (
     <div className="w-full min-h-screen py-10">
