@@ -27,8 +27,8 @@ const profilesData = [
     img: "/images/apple_bootstrap.jpg",
     name: "AI Ethiopian Tour + Cultural Concierge App",
     desc: "A modern, AI-powered tourism platform for Ethiopia featuring multilingual chat, tour booking, and integrated payment processing.",
-    github: "https://github.com/Fikre-M/apllee-clone",
-    website: "https://startling-heliotrope-e68744.netlify.app/",
+    github: "https://github.com/Fikre-M/EthioAI-TourismPlatform.git",
+    website: "https://client-sable-xi.vercel.app/",
     category: "Full-Stack App",
   },
 
