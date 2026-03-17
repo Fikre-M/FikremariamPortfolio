@@ -111,8 +111,7 @@ export default function HeroSection() {
       try {
         await Promise.all(imagePromises);
         setIsLoading(false);
-      } catch (error) {
-        console.error("Error loading images:", error);
+      } catch {
         setIsLoading(false);
       }
     };

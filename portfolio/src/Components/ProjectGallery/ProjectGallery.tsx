@@ -291,8 +291,8 @@ const ProjectGallery: React.FC<ProjectGalleryProps> = ({
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [searchTerm, setSearchTerm] = useState("");
 
-  const handleImageError = useCallback((projectId: number) => {
-    console.log(`Image failed to load for project ${projectId}`);
+  const handleImageError = useCallback((_projectId: number) => {
+    // silently handle image load failures
   }, []);
 
   const handleClearSearch = useCallback(() => {
@@ -328,25 +328,10 @@ const ProjectGallery: React.FC<ProjectGalleryProps> = ({
 
   // Filter projects based on category and search term
   const filteredProjects = useMemo(() => {
-    console.log("Filtering projects with:", {
-      selectedCategory,
-      searchTerm,
-      allCategories: categories,
-      projects: projects.map((p) => ({ name: p.name, category: p.category })),
-    });
-
     const result = projects.filter((project) => {
-      // Handle 'All' category
       const isAll = selectedCategory === "All" || selectedCategory === "all";
       const categoryMatch =
         isAll || getCategoryDisplayName(project.category) === selectedCategory;
-
-      console.log(`Project '${project.name}' (${project.category}):`, {
-        matchesCategory: categoryMatch,
-        isAll,
-        selectedCategory,
-        projectCategory: project.category,
-      });
 
       const searchMatch =
         searchTerm === "" ||
@@ -360,7 +345,6 @@ const ProjectGallery: React.FC<ProjectGalleryProps> = ({
       return categoryMatch && searchMatch;
     });
 
-    console.log("Filtered projects:", result);
     return result;
   }, [projects, selectedCategory, searchTerm, categories]);
 
