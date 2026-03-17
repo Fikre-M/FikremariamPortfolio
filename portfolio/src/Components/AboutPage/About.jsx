@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
-import se2Image from "../../assets/f3.jpg";
+import se2Image from "../../assets/f1.jpg";
 import CirtfImage from "../../assets/fmCirtf.jpg";
 import CirtfImage1 from "../../assets/ai_cirtificate.jpg";
 import NewImage from "../../assets/wes.png";
