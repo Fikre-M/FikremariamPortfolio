@@ -19,7 +19,7 @@ const profilesData = [
     name: "AI Healthcare & Medical Appointment System",
     desc: "AI for Health is a modern, production-ready healthcare platform that combines artificial intelligence with intuitive user experience to provide comprehensive healthcare management solutions. Built with React, TypeScript, and modern web technologies, it offers both patient and doctor interfaces with advanced AI assistance.",
     github: "https://github.com/Fikre-M/AIforHealth.git",
-    website: "https://aidflow-casemgt.netlify.app/landing",
+    website: "https://fridayhealth-123.netlify.app/",
     category: "Full-Stack App",
   },
   {
