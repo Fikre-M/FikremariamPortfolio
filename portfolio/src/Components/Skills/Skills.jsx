@@ -163,7 +163,7 @@ export default function Skills() {
 
   return (
     <div className="w-full py-12 px-6">
-      <div className="max-w-6xl mx-auto w-full">
+      <div className="max-w-5xl mx-auto w-full">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-white mb-4">
