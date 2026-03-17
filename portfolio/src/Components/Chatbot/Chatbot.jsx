@@ -313,7 +313,7 @@ const Chatbot = () => {
       message.includes("hire")
     ) {
       return {
-        text: "📫 You can reach me through:\n\n• **Email:** your.email@example.com\n• **LinkedIn:** linkedin.com/in/yourprofile\n• **GitHub:** github.com/yourusername\n\nI'm open to junior developer roles, internships, or freelance projects!",
+        text: "📫 You can reach me through:\n\n• **Email:** fikreddu@gmail.com\n• **LinkedIn:** linkedin.com/in/fikremariam-k-28916062\n• **GitHub:** github.com/Fikre-M\n\nI'm open to junior developer roles, internships, or freelance projects!",
         isUser: false,
         quickActions: [
           {
