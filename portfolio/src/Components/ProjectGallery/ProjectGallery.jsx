@@ -24,7 +24,7 @@ const profilesData = [
   },
   {
     id: 2,
-    img: "/images/apple_bootstrap.jpg",
+    img: "/images/ethio_ai.png",
     name: "AI Ethiopian Tour + Cultural Concierge App",
     desc: "A modern, AI-powered tourism platform for Ethiopia featuring multilingual chat, tour booking, and integrated payment processing.",
     github: "https://github.com/Fikre-M/EthioAI-TourismPlatform.git",
