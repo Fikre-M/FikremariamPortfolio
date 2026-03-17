@@ -61,20 +61,12 @@ const skillsData = [
     level: 95,
   },
   {
-    id: "testing",
-    icon: "FaShieldAlt",
-    title: "Testing & Quality Assurance",
-    description:
-      "Skilled in unit testing, integration testing, and end-to-end testing using Jest, Vitest, Cypress, and Testing Library. Focus on test-driven development and maintaining high code coverage.",
-    level: 82,
+    id: "tools",
+    icon: "FaCogs",
+    title: "Development Tools & Workflow",
+    description: "Proficient with build tools (Vite, Webpack), design tools (Figma, Adobe XD), and collaboration platforms (Slack, Jira, Notion). Focused on code quality with ESLint, Prettier, and Husky.",
+    level: 88,
   },
-  // {
-  //   id: "tools",
-  //   icon: "FaCogs",
-  //   title: "Development Tools & Workflow",
-  //   description: "Build Tools: Vite, Webpack, Rollup, Parcel | Design & Collaboration: Figma, Adobe XD, Slack, Jira, Notion | Code Quality: ESLint, Prettier, Husky, SonarQube",
-  //   level: 88,
-  // },
 ];
 
 // Icon mapping
@@ -207,7 +199,7 @@ export default function Skills() {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredSkills.length > 0 ? (
             filteredSkills.map((skill, index) => (
               <SkillCard
