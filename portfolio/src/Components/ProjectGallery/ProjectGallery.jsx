@@ -34,11 +34,11 @@ const profilesData = [
 
   {
     id: 3,
-    img: "/images/clock_resized.jpg",
+    img: "/images/rideshare.png",
     name: "Rideshare Application",
     desc: "A modern, intelligent rideshare application built with React and powered by artificial intelligence. This platform features smart driver-passenger matching, dynamic pricing, route optimization, demand prediction, and predictive analytics.",
-    github: "https://github.com/Fikre-M/DigitalClockApp",
-    website: "https://clock.rohaazage.com/",
+    github: "https://github.com/Fikre-M/Rideshare-App.git",
+    website: "https://fastidious-jalebi-1ce68e.netlify.app/",
     category: "Frontend App",
   },
 
