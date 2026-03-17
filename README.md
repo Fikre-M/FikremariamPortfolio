@@ -22,12 +22,11 @@ A modern, responsive personal portfolio website built with React 19 and TypeScri
 
 | Project | Stack |
 |---|---|
-| Evangadi Forum | React, Node.js, MySQL, Express |
-| Apple Clone | React, Tailwind CSS, Framer Motion |
-| Amazon Clone | React, Firebase, Stripe |
-| Netflix Clone | React, TMDB API |
-| Digital Clock App | React, Web APIs |
-| This Portfolio | React, TypeScript, Tailwind, Vite |
+| EthioAI-TourismPlatform | React, Node.js, MySQL, Express |
+| Rideshare-App | React, Tailwind CSS, Framer Motion |
+| AIforHealth | React, Tailwind CSS, Framer Motion, MongoDB|
+| Case-Management-Portal | React, TMDB API |
+| FikremariamPortfolio | React, TypeScript, Tailwind, Vite |
 
 ## Getting Started
 
