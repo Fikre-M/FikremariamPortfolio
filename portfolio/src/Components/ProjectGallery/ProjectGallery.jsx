@@ -18,8 +18,8 @@ const profilesData = [
     img: "/images/ai_cm.png",
     name: "AI Healthcare & Medical Appointment System",
     desc: "AI for Health is a modern, production-ready healthcare platform that combines artificial intelligence with intuitive user experience to provide comprehensive healthcare management solutions. Built with React, TypeScript, and modern web technologies, it offers both patient and doctor interfaces with advanced AI assistance.",
-    github: "https://github.com/Fikre-M/evangadi_forum",
-    website: "https://evangadiforum.knoweledagebased.com/",
+    github: "https://github.com/Fikre-M/AIforHealth.git",
+    website: "https://aidflow-casemgt.netlify.app/landing",
     category: "Full-Stack App",
   },
   {
