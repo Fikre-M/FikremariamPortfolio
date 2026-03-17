@@ -1,90 +1,46 @@
-# Portfolio Website
+# Fikremariam Kassa — Portfolio
 
-A modern, responsive portfolio website showcasing full-stack development skills and projects.
+A modern, responsive personal portfolio website built with React 19 and TypeScript. Live at [portfolio-tau-five-dqhmersn7z.vercel.app](https://portfolio-tau-five-dqhmersn7z.vercel.app).
 
-## 🚀 Quick Start
+## Tech Stack
+
+- React 19, TypeScript, Vite
+- Tailwind CSS, Framer Motion, styled-components
+- React Router DOM, React Hook Form
+- EmailJS (contact form)
+- React Helmet Async (SEO)
+- Vitest, React Testing Library
+
+## Sections
+
+- Hero, About, Skills, Projects, Contact
+- AI-powered portfolio chatbot
+- Dark/light mode toggle
+- Scroll-to-top, lazy images, error boundary
+
+## Projects Featured
+
+| Project | Stack |
+|---|---|
+| Evangadi Forum | React, Node.js, MySQL, Express |
+| Apple Clone | React, Tailwind CSS, Framer Motion |
+| Amazon Clone | React, Firebase, Stripe |
+| Netflix Clone | React, TMDB API |
+| Digital Clock App | React, Web APIs |
+| This Portfolio | React, TypeScript, Tailwind, Vite |
+
+## Getting Started
 
 ```bash
-# Clone the repository
-git clone https://github.com/Fikre-M/portfolio25.git
-cd portfolio25/portfolio
-
-# Install dependencies
-npm install
-
-# Set up environment variables
+git clone https://github.com/Fikre-M/FP.git
+cd portfolio
+npm install --legacy-peer-deps
 cp .env.example .env
-# Edit .env with your EmailJS credentials
-
-# Start development server
+# fill in your EmailJS credentials
 npm run dev
 ```
 
-## 🛠️ Tech Stack
-
-- **Frontend**: React 19, TypeScript, Vite
-- **Styling**: Tailwind CSS, PostCSS
-- **Animations**: Framer Motion
-- **Forms**: React Hook Form
-- **Testing**: Vitest, React Testing Library
-- **Icons**: Lucide React
-- **Contact**: EmailJS integration
-
-## 📁 Project Structure
-
-```
-portfolio25/
-└── portfolio/           # Main application
-    ├── public/         # Static assets
-    ├── src/
-    │   ├── Components/ # React components
-    │   ├── contexts/   # React contexts
-    │   ├── data/       # Static data
-    │   ├── types/      # TypeScript definitions
-    │   └── utils/      # Utility functions
-    ├── package.json
-    └── README.md       # Detailed documentation
-```
-
-## 🌟 Features
-
-- **Responsive Design**: Optimized for all devices
-- **Dark/Light Mode**: Theme switching with smooth transitions
-- **SEO Optimized**: Meta tags and structured data
-- **Interactive Sections**: About, Skills, Projects, Contact
-- **Problem Solving**: Algorithmic challenges with solutions
-- **Working Contact Form**: EmailJS integration
-- **Smooth Animations**: Engaging user interactions
-- **Type Safety**: Full TypeScript implementation
-
-## 🚀 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-- `npm run test` - Run tests
-- `npm run test:ui` - Run tests with UI
-- `npm run type-check` - Run TypeScript type checking
-
-## 🌐 Deployment
-
-### Netlify (Recommended)
-1. Connect your GitHub repository to Netlify
-2. Set build command: `npm run build`
-3. Set publish directory: `portfolio/dist`
-4. Add environment variables in Netlify dashboard
-
-### Vercel
-1. Import project from GitHub
-2. Framework preset: Vite
-3. Build command: `npm run build`
-4. Output directory: `portfolio/dist`
-
-## ⚙️ Configuration
-
-### Environment Variables
-Create a `.env` file in the `portfolio/` directory:
+## Environment Variables
 
 ```env
 VITE_EMAILJS_SERVICE_ID=your_service_id
@@ -92,40 +48,33 @@ VITE_EMAILJS_TEMPLATE_ID=your_template_id
 VITE_EMAILJS_PUBLIC_KEY=your_public_key
 ```
 
-### EmailJS Setup
-1. Create an account at [emailjs.com](https://www.emailjs.com/)
-2. Create a service (Gmail, Outlook, etc.)
-3. Create an email template
-4. Get your Service ID, Template ID, and Public Key
-5. Add them to your `.env` file
+Get these from [emailjs.com](https://www.emailjs.com). The public key is safe to expose in the browser — protect your account by setting allowed domains in the EmailJS dashboard.
 
-## 📱 Browser Support
+## Scripts
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
+```bash
+npm run dev        # development server
+npm run build      # production build
+npm run preview    # preview production build
+npm run lint       # ESLint
+npm run test       # run tests once
+```
 
-## 🤝 Contributing
+## Deployment
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/new-feature`
-3. Commit changes: `git commit -am 'Add new feature'`
-4. Push to branch: `git push origin feature/new-feature`
-5. Submit a pull request
+Deployed on Vercel. The `vercel.json` in the `portfolio/` directory handles build config and SPA routing rewrites.
 
-## 📄 License
+To deploy your own:
+```bash
+cd portfolio
+vercel --prod
+```
 
-This project is licensed under the MIT License - see the [LICENSE](portfolio/LICENSE) file for details.
+Then add the three `VITE_EMAILJS_*` environment variables in the Vercel dashboard under `Settings → Environment Variables`.
 
-## 👨‍💻 Author
+## Author
 
 **Fikremariam Kassa**
-- GitHub: [@Fikre-M](https://github.com/Fikre-M)
-- LinkedIn: [Fikremariam Kassa](https://www.linkedin.com/in/fikremariam-kassa-28916062/)
-- Email: fikreddu@email.com
-
----
-
-⭐ Star this repository if you found it helpful!
+- GitHub: [Fikre-M](https://github.com/Fikre-M)
+- LinkedIn: [fikremariam-k-28916062](https://www.linkedin.com/in/fikremariam-k-28916062/)
+- Email: fikreddu@gmail.com
