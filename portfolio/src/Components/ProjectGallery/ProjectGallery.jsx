@@ -5,11 +5,11 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 const profilesData = [
   {
     id: 4,
-    img: "/images/netflix.jpg",
+    img: "/images/casemgt.png",
     name: "AI Shelter Operations & Case Management System",
     desc: "A next-generation case management system showcasing cutting-edge frontend development with advanced animations, real-time monitoring, and professional-grade user experience.",
-    github: "https://github.com/Fikre-M/Netflix",
-    website: "https://edu-react-movie-app.knoweledagebased.com/",
+    github: "https://github.com/Fikre-M/Case-Management-Portal.git",
+    website: "https://aidflow-casemgt.netlify.app/landing",
     category: "Frontend App",
   },
 
