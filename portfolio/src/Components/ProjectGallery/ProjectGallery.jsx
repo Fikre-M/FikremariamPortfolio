@@ -28,7 +28,7 @@ const profilesData = [
     name: "AI Ethiopian Tour + Cultural Concierge App",
     desc: "A modern, AI-powered tourism platform for Ethiopia featuring multilingual chat, tour booking, and integrated payment processing.",
     github: "https://github.com/Fikre-M/EthioAI-TourismPlatform.git",
-    website: "https://client-sable-xi.vercel.app/",
+    website: "https://ethio-ai-tourism-platform.vercel.app/",
     category: "Full-Stack App",
   },
 
