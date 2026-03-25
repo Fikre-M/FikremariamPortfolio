@@ -7,7 +7,7 @@ const profilesData = [
     id: 4,
     img: "/images/ai_cm.png",
     name: "Case Management System",
-    desc: "A next-generation case management system showcasing cutting-edge frontend development with advanced animations, real-time monitoring, and professional-grade user experience.",
+    desc: "Case management dashboard for legal professionals built with React 19, TailwindCSS, and Framer Motion. Features a Gemini-powered AI assistant proxied through Netlify serverless functions, bcrypt + JWT authentication, interactive Recharts dashboards, and 39 unit tests covering auth, AI service, and performance monitoring.",
     github: "https://github.com/Fikre-M/Case-Management-Portal.git",
     website: "https://aidflow-casemgt.netlify.app/landing",
     category: "Frontend App",
