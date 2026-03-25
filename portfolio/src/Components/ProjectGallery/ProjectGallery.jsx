@@ -17,7 +17,7 @@ const profilesData = [
     id: 1,
     img: "/images/ai4health.png",
     name: "AI Healthcare & Medical Appointment System",
-    desc: "AI for Health is a modern, production-ready healthcare platform that combines artificial intelligence with intuitive user experience to provide comprehensive healthcare management solutions. Built with React, TypeScript, and modern web technologies, it offers both patient and doctor interfaces with advanced AI assistance.",
+    desc: "Full-stack healthcare platform built with React, TypeScript, Node.js, and MongoDB. Features AI-powered health assistance via Gemini 2.5 Flash, appointment booking, dual dashboards for patients and doctors, JWT authentication with refresh token rotation, and a CI pipeline with GitHub Actions. Deployed on Netlify + Render.",
     github: "https://github.com/Fikre-M/AIforHealth.git",
     website: "https://ai4health.netlify.app/",
     category: "Full-Stack App",
