@@ -38,7 +38,7 @@ const profilesData = [
     name: "Rideshare Application",
     desc: "A modern, intelligent rideshare application built with React and powered by artificial intelligence. This platform features smart driver-passenger matching, dynamic pricing, route optimization, demand prediction, and predictive analytics.",
     github: "https://github.com/Fikre-M/Rideshare-App.git",
-    website: "https://fastidious-jalebi-1ce68e.netlify.app/",
+    website: "https://rideshare-b5lnu899w-fikreddu-7782s-projects.vercel.app/",
     category: "Frontend App",
   },
 
