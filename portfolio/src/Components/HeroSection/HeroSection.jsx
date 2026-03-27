@@ -199,7 +199,7 @@ export default function HeroSection() {
               aria-hidden="true"
             />
             <h2 className="text-lg sm:text-xl md:text-2xl text-blue-300 font-semibold drop-shadow-lg leading-tight">
-              Web Developer / Software Engineer (Full Stack - MERN)
+              AI Web Developer / Software Engineer (Full Stack - MERN)
             </h2>
           </div>
 
