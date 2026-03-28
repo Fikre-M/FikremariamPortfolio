@@ -100,7 +100,7 @@ export default function About() {
   );
 
   // Handle social link clicks
-  const handleSocialClick = useCallback((href, label) => {
+  const handleSocialClick = useCallback((href) => {
     window.open(href, "_blank", "noopener noreferrer");
   }, []);
 
@@ -222,14 +222,14 @@ export default function About() {
                     Connect
                   </h3>
                   <div className="flex space-x-6">
-                    {socialLinks.map(({ id, href, icon: Icon, label }) => (
+                    {socialLinks.map(({ id, href, icon: ICON, label }) => (
                       <button
                         key={id}
-                        onClick={() => handleSocialClick(href, label)}
+                        onClick={() => handleSocialClick(href)}
                         className="text-blue-400 hover:text-blue-300 text-2xl sm:text-3xl transition-all duration-200 hover:scale-110"
                         aria-label={label}
                       >
-                        <Icon />
+                        <ICON />
                       </button>
                     ))}
                   </div>

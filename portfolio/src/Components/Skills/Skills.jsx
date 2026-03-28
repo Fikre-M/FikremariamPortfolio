@@ -93,7 +93,7 @@ const iconGradients = {
   FaShieldAlt: "from-red-500 to-red-600",
 };
 
-function SkillCard({ skill, index, isHovered, onHover, onLeave }) {
+function SkillCard({ skill, isHovered, onHover, onLeave }) {
   const IconComponent = iconMap[skill.icon];
   const iconGradient = iconGradients[skill.icon] || "from-gray-400 to-gray-500";
 
@@ -200,11 +200,10 @@ export default function Skills() {
         {/* Skills Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredSkills.length > 0 ? (
-            filteredSkills.map((skill, index) => (
+            filteredSkills.map((skill) => (
               <SkillCard
                 key={skill.id}
                 skill={skill}
-                index={index}
                 isHovered={hoveredSkill === skill.id}
                 onHover={handleSkillHover}
                 onLeave={handleSkillLeave}

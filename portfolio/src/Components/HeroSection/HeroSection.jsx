@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
 import { Code2, Github, Linkedin, Mail } from "lucide-react";
 
 // Import local images
@@ -12,7 +12,7 @@ export default function HeroSection() {
   const [isHovered, setIsHovered] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
-  const slides = [
+  const slides = useMemo(() => [
     {
       image: healthcareBg,
       title: "AI Healthcare & Medical Appointment System",
@@ -33,7 +33,7 @@ export default function HeroSection() {
       title: "Personal Portfolio",
       description: "FikreWorks",
     },
-  ];
+  ], []);
 
   const scrollToSection = useCallback((sectionId) => {
     const element = document.getElementById(sectionId);
