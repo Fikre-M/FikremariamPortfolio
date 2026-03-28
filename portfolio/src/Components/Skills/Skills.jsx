@@ -17,7 +17,7 @@ const skillsData = [
     icon: "FaLaptopCode",
     title: "Frontend Development",
     description:
-      "Expert in modern frontend technologies including React, TypeScript, Next.js, and Vue.js. Proficient in creating responsive, accessible, and performant user interfaces with advanced CSS, Tailwind, and component libraries.",
+      "Expert in modern frontend technologies including React, JavaScript, TypeScript, Next.js, and Vue.js. Proficient in creating responsive, accessible, and performant user interfaces with advanced CSS, Tailwind, and component libraries.",
     level: 90,
   },
   {
@@ -25,7 +25,7 @@ const skillsData = [
     icon: "FaServer",
     title: "Backend Development",
     description:
-      "Skilled in building scalable server-side applications using Node.js, Express.js, Python, and RESTful APIs. Experience with microservices architecture, authentication systems, and API design best practices.",
+      "Skilled in building scalable server-side applications using Node.js, Express.js, and RESTful APIs. Experience with microservices architecture, authentication systems, and API design best practices.",
     level: 85,
   },
   {
@@ -64,7 +64,8 @@ const skillsData = [
     id: "tools",
     icon: "FaCogs",
     title: "Development Tools & Workflow",
-    description: "Proficient with build tools (Vite, Webpack), design tools (Figma, Adobe XD), and collaboration platforms (Slack, Jira, Notion). Focused on code quality with ESLint, Prettier, and Husky.",
+    description:
+      "Focused on code quality with Vitest, Jest, Testing Library, ESLint, Prettier, and Husky, supported by Git Hooks and CI/CD pipelines. Experienced with Postman, Swagger, Web Vitals, and performance audits for fast, reliable user experiences.",
     level: 88,
   },
 ];
@@ -166,13 +167,11 @@ export default function Skills() {
       <div className="max-w-5xl mx-auto w-full">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">
-            My Skills
-          </h2>
+          <h2 className="text-4xl font-bold text-white mb-4">My Skills</h2>
           <div className="h-1 w-24 bg-blue-500 rounded-full mx-auto"></div>
           <p className="text-gray-300 mt-5 text-base max-w-2xl mx-auto">
             A comprehensive overview of my technical expertise and proficiency
-            levels across various development domains.
+            across key development domains.
           </p>
         </div>
 
