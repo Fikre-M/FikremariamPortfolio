@@ -205,8 +205,8 @@ export default function HeroSection() {
 
           {/* Value Statement */}
           <p className="text-base sm:text-lg md:text-xl text-white mb-3 max-w-2xl mx-auto drop-shadow-lg font-medium leading-snug transform transition-all duration-500 ease-in-out">
-            I build responsive, new generation web applications to decode the
-            past and engineer the future.
+            I build responsive, next‑generation, industry‑grade web applications
+            designed to decode the past and engineer the future.
           </p>
 
           {/* Current Project Description */}
