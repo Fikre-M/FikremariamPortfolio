@@ -147,9 +147,9 @@ export default function ContactSection() {
   };
 
   return (
-    <div id="contact" className="w-full" style={{ scrollMarginTop: "100px" }}>
+    <div id="contact" className="w-full pt-20 pb-16 px-6">
       {/* Title outside main container */}
-      <h2 className="text-center text-4xl font-bold mb-8 mt-8 relative bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent w-full">
+      <h2 className="text-center text-4xl font-bold mb-6 relative bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent w-full">
         Contact
         <span className="block mx-auto mt-3 h-1 w-24 bg-blue-500 rounded"></span>
       </h2>

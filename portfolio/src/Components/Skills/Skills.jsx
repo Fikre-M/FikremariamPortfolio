@@ -163,20 +163,20 @@ export default function Skills() {
   });
 
   return (
-    <div id="skills" className="w-full py-12 px-6" style={{ scrollMarginTop: "100px" }}>
+    <div id="skills" className="w-full pt-20 pb-16 px-6">
       <div className="max-w-5xl mx-auto w-full">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">My Skills</h2>
           <div className="h-1 w-24 bg-blue-500 rounded-full mx-auto"></div>
-          <p className="text-gray-300 mt-5 text-base max-w-2xl mx-auto">
-            A comprehensive overview of my technical expertise and proficiency
-            across key development domains.
+          <p className="text-gray-300 text-base max-w-2xl mx-auto leading-relaxed">
+            Expertise in modern web technologies with a focus on building scalable, 
+            responsive applications using industry-leading frameworks and best practices.
           </p>
         </div>
 
         {/* Search */}
-        <div className="mb-8">
+        <div className="mb-6">
           <div className="flex justify-center mb-4">
             <div className="relative w-full max-w-md">
               <input
