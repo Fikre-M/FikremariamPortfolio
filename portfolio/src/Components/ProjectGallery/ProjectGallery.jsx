@@ -93,14 +93,13 @@ function ProjectCard({ profile, index }) {
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* IMAGE with icons overlaid */}
-      <div className="relative flex-shrink-0 mx-auto md:mx-0">
+      <div className="relative flex-shrink-0 mx-auto md:mx-0 w-full md:w-4/12">
         <div
-          className={`bg-gray-700 rounded-xl w-60 h-45 flex items-center justify-center relative overflow-hidden shadow-lg transition-all duration-500 cursor-pointer ${
+          className={`bg-gray-700 rounded-xl flex items-center justify-center relative overflow-hidden shadow-lg transition-all duration-500 cursor-pointer h-full ${
             isHovered
               ? "shadow-2xl -translate-y-3 scale-105 ring-2 ring-blue-500"
               : "hover:shadow-2xl hover:-translate-y-2"
           }`}
-          style={{ height: "180px" }}
         >
           {!imageError ? (
             <img
@@ -240,8 +239,8 @@ export default function ProjectGallery() {
   };
 
   return (
-    <div className="w-full min-h-screen py-10">
-      <h2 className="text-center text-4xl font-bold mb-8 relative bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent w-full mt-10">
+    <div id="projects" className="w-full pt-20 pb-16 px-6">
+      <h2 className="text-center text-4xl font-bold mb-6 relative bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent w-full">
         My Projects
         <span className="block mx-auto mt-3 h-1 w-24 bg-blue-500 rounded"></span>
       </h2>
