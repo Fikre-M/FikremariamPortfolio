@@ -101,8 +101,8 @@ export default function Header() {
           </div>
         </a> */}
         <a
-          href="#home"
-          onClick={(e) => handleNavClick(e, "home")}
+          href="#HeroSection"
+          onClick={(e) => handleNavClick(e, "HeroSection")}
         >
           <div className="text-white w-32">
             <Logo />
