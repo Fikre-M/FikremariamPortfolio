@@ -23,7 +23,7 @@ const ChatbotContainer = styled.div`
 `;
 
 const ChatbotButton = styled.button`
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #60a5fa 0%, #a855f7 50%, #ec4899 100%);
   color: white;
   border: none;
   border-radius: 50%;
@@ -34,12 +34,12 @@ const ChatbotButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 6px 20px rgba(168, 85, 247, 0.4);
   }
 
   &:active {
@@ -77,7 +77,7 @@ const ChatWindow = styled.div`
 `;
 
 const ChatHeader = styled.div`
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #60a5fa 0%, #a855f7 50%, #ec4899 100%);
   color: white;
   padding: 1rem 1.25rem;
   display: flex;
