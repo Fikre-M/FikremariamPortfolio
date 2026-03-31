@@ -144,7 +144,9 @@ export default function About() {
             {/* RIGHT: Bio Text */}
             <div className="w-full md:w-3/5 flex flex-col justify-center">
               <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent leading-tight text-center md:text-left">
-                <span className="block">AI & Full Stack Software Engineer (MERN)</span>
+                <span className="block">
+                  AI & Full Stack Software Engineer (MERN)
+                </span>
                 <span className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-300 mt-2">
                   Bridging Human Insights & Digital Innovation
                 </span>
@@ -155,12 +157,13 @@ export default function About() {
                 am a <b> Full Stack MERN Developer and AI Specialist </b> with a
                 unique academic foundation in{" "}
                 <b>Paleoanthropology and History</b>. My career is driven by a
-                single mission: using advanced technology to solve complex human
-                challenges. By combining a scientific research mindset with
-                modern engineering, I build scalable, AI-integrated applications
-                that are as intuitive as they are powerful. My transition from
-                analyzing ancient civilizations to architecting digital
-                ecosystems allows me to approach software through a lens of{" "}
+                single mission: leveraging advanced technology to solve complex
+                human challenges. By combining a scientific research mindset
+                with modern engineering, I build scalable, AI-integrated
+                applications that are as intuitive as they are powerful. My
+                transition from analyzing ancient evolutionary ecology to
+                architecting digital ecosystems enable me to approach software
+                through a lens shaped by{" "}
                 <b>human behavior, ethics, and long-term impact</b>.
               </p>
             </div>
