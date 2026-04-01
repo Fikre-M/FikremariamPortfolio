@@ -239,7 +239,7 @@ export default function ProjectGallery() {
   };
 
   return (
-    <div id="projects" className="w-full pt-20 pb-16 px-6">
+    <div id="projects" className="w-full pt-20 px-6">
       <h2 className="text-center text-4xl font-bold mb-6 relative bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent w-full">
         My Projects
         <span className="block mx-auto mt-3 h-1 w-24 bg-blue-500 rounded"></span>

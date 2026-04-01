@@ -163,7 +163,7 @@ export default function Skills() {
   });
 
   return (
-    <div id="skills" className="w-full pt-20 pb-16 px-6">
+    <div id="skills" className="w-full pt-20 px-6">
       <div className="max-w-5xl mx-auto w-full">
         {/* Header */}
         <div className="text-center mb-8">

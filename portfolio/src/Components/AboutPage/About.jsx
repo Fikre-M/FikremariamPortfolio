@@ -107,7 +107,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className={`min-h-screen py-20 px-4 sm:px-6 lg:px-8 transition-opacity duration-1000 ${
+      className={`min-h-screen pb-0 py-20 px-4 sm:px-6 lg:px-8 transition-opacity duration-1000 ${
         isVisible ? "opacity-100" : "opacity-80"
       }`}
       style={{ scrollMarginTop: "80px" }} // Offset for fixed header
@@ -154,8 +154,13 @@ export default function About() {
               <p className="text-gray-200 text-base sm:text-lg leading-relaxed text-justify">
                 Hi! I'm Fikremariam, originally from Ethiopia, now based in New
                 York. With a professional background in teaching and research, I
-                am a <b> Full Stack MERN Developer and AI Specialist </b> with a
-                unique academic foundation in{" "}
+                am a{" "}
+                <b>
+                  {" "}
+                  Full‑Stack MERN Developer building AI‑enhanced
+                  applications{" "}
+                </b>{" "}
+                with a unique academic foundation in{" "}
                 <b>Paleoanthropology and History</b>. My career is driven by a
                 single mission: leveraging advanced technology to solve complex
                 human challenges. By combining a scientific research mindset
