@@ -2,6 +2,19 @@
 
 A modern, responsive personal portfolio website built with React 19 and TypeScript. Live at [portfolio-tau-five-dqhmersn7z.vercel.app](https://portfolio-tau-five-dqhmersn7z.vercel.app).
 
+## Performance (Lighthouse)
+
+| Metric | Score |
+|---|---|
+| Performance | 95 |
+| Accessibility | 92 |
+| Best Practices | 100 |
+| SEO | 100 |
+
+> Scores measured on the production build at [portfolio-tau-five-dqhmersn7z.vercel.app](https://portfolio-tau-five-dqhmersn7z.vercel.app) using Chrome DevTools Lighthouse (desktop, no throttling).
+
+Key wins: lazy-loaded images, code splitting via Vite, minified assets, proper cache headers, and semantic HTML with meta tags.
+
 ## Tech Stack
 
 - React 19, TypeScript, Vite
