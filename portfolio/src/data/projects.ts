@@ -57,6 +57,17 @@ export const projects: Project[] = [
   },
   {
     id: 6,
+    img: "/images/portfolio-screenshot.jpg",
+    name: "Fikremariam Kassa Portfolio",
+    desc: "A modern, responsive personal portfolio website showcasing full-stack development skills with React 19, TypeScript, and advanced features including AI chatbot, problem-solving section, and contact form.",
+    github: "https://github.com/Fikre-M/FikremariamPortfolio",
+    liveUrl: "https://portfolio-tau-five-dqhmersn7z.vercel.app",
+    category: "full-stack",
+    technologies: ["React 19", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion", "Vercel"],
+    featured: true,
+  },
+  {
+    id: 7,
     img: "/images/clock_resized.jpg",
     name: "Digital Clock App",
     desc: "An interactive digital clock application with integrated chatbot functionality. Features real-time updates, multiple time zones, customizable themes, and AI-powered assistance. Demonstrates integration of multiple APIs and real-time data handling.",
