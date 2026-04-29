@@ -72,6 +72,26 @@ npm run lint       # ESLint
 npm run test       # run tests once
 ```
 
+## CI/CD
+
+A GitHub Actions workflow runs on every push and pull request to `main`. It lives at `.github/workflows/ci.yml` and runs these steps in order:
+
+1. Install dependencies (`npm ci --legacy-peer-deps`)
+2. Lint (`npm run lint`)
+3. Type check (`tsc --noEmit`)
+4. Unit tests (`npm run test`)
+5. Production build (`npm run build`)
+
+The build step uses three repository secrets for EmailJS — add them under `Settings → Secrets and variables → Actions`:
+
+| Secret | Description |
+|---|---|
+| `VITE_EMAILJS_SERVICE_ID` | EmailJS service ID |
+| `VITE_EMAILJS_TEMPLATE_ID` | EmailJS template ID |
+| `VITE_EMAILJS_PUBLIC_KEY` | EmailJS public key |
+
+Vercel handles continuous deployment automatically on every merge to `main` via its GitHub integration.
+
 ## Deployment
 
 Deployed on Vercel. The `vercel.json` in the `portfolio/` directory handles build config and SPA routing rewrites.
