@@ -1,5 +1,7 @@
 # Fikremariam Kassa — Portfolio
 
+[![CI](https://github.com/Fikre-M/FP/actions/workflows/ci.yml/badge.svg)](https://github.com/Fikre-M/FP/actions/workflows/ci.yml)
+
 A modern, responsive personal portfolio website built with React 19 and TypeScript. Live at [portfolio-tau-five-dqhmersn7z.vercel.app](https://portfolio-tau-five-dqhmersn7z.vercel.app).
 
 ## Performance (Lighthouse)
