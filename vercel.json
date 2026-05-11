@@ -1,6 +1,8 @@
 {
   "buildCommand": "cd portfolio && npm install --legacy-peer-deps && npm run build",
   "outputDirectory": "portfolio/dist",
+  "installCommand": "cd portfolio && npm install --legacy-peer-deps",
+  "framework": "vite",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
