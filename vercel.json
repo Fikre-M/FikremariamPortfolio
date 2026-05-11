@@ -1,6 +1,6 @@
 {
-  "buildCommand": "cd portfolio && npm install --legacy-peer-deps && npm run build",
-  "outputDirectory": "portfolio/dist",
+  "buildCommand": "npm install --legacy-peer-deps && npm run build",
+  "outputDirectory": "dist",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
