@@ -97,3 +97,6 @@ temp/
 ehthumbs.db
 Thumbs.db
 .vercel
+
+# TypeScript build cache
+*.tsbuildinfo
