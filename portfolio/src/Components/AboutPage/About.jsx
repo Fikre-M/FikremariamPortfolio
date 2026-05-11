@@ -151,26 +151,34 @@ export default function About() {
                   Bridging Human Insights & Digital Innovation
                 </span>
               </h2>
-              <p className="text-gray-200 text-base sm:text-lg leading-relaxed text-justify">
-                Hi! I'm Fikremariam, originally from Ethiopia, now based in New
-                York. With a professional background in teaching and research, I
-                am a{" "}
-                <b>
-                  {" "}
-                  Full‑Stack MERN Developer building AI‑enhanced
-                  applications{" "}
-                </b>{" "}
-                with a unique academic foundation in{" "}
-                <b>Paleoanthropology and History</b>. My career is driven by a
-                single mission: leveraging advanced technology to solve complex
-                human challenges. By combining a scientific research mindset
-                with modern engineering, I build scalable, AI-integrated
-                applications that are as intuitive as they are powerful. My
-                transition from analyzing ancient evolutionary ecology to
-                architecting digital ecosystems enable me to approach software
-                through a lens shaped by{" "}
-                <b>human behavior, ethics, and long-term impact</b>.
-              </p>
+              <div className="text-gray-200 text-base sm:text-lg leading-relaxed space-y-4 md:text-justify">
+                <p>
+                  Hi, I’m Fikremariam — originally from Ethiopia and now based
+                  in New York. I’m a Full-Stack MERN Developer focused on
+                  building modern web applications enhanced with AI tools and
+                  thoughtful user experiences.
+                </p>
+                <p>
+                  My background is a little different from the traditional
+                  software path. Before moving into tech, I studied and worked
+                  in teaching, research, paleoanthropology, and history. That
+                  experience trained me to think critically, ask deeper
+                  questions, and approach problems with curiosity and patience —
+                  skills that now shape the way I build software.
+                </p>
+                <p>
+                  Today, I combine that research mindset with modern development
+                  technologies to create scalable, user-focused applications.
+                  I’m especially interested in how AI and software can improve
+                  everyday life, simplify complex tasks, and create meaningful
+                  digital experiences.
+                </p>
+                <p>
+                  For me, software engineering is not only about writing code —
+                  it’s about understanding people, solving problems clearly, and
+                  building tools that have long-term value.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -297,7 +305,7 @@ export default function About() {
                   </button>
                   <button
                     onClick={() =>
-                      window.open("/resume/Kassa_Resume.pdf", "_blank")
+                      window.open("/resume/Fikremariam_K_Resume.pdf", "_blank")
                     }
                     className="bg-white/20 hover:bg-white/30 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-200 flex items-center"
                   >
